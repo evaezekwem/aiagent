@@ -1,25 +1,22 @@
-aiagent/
-├── main.py
-├── tools/
-│   ├── evaluate_math_expression.py
-│   ├── get_current_temperature.py
-│   ├── get_file_content.py
-│   ├── get_files_info.py
-│   ├── run_python_file.py
-│   └── write_file.py
-├── config/
-│   ├── agent_tools.py
-│   ├── config.py
-|   └── prompts.py
-├── tests.py
-├── pyproject.toml
-├── uv.lock
-├── README.md
-├── .github/copilot-instructions.md
+
+
+# Simple AI Agent
+
+Simple AI Agent is a minimal agent built with Gemini API for simple tasks and code execution. It is aimed to be a good start for anyone building AI agents.
+
+## Key Features
+- **Gemini API Integration:** Interact with Google’s Gemini models using your own API key.
+- **Secure Tool Calls:** All file and directory operations are restricted to a configurable working directory for safety.
+- **Easy Setup:** Step-by-step instructions for installing dependencies, configuring your API key, and running the agent.
+- **Extensible Design:** Add new tools in the `tools/` directory and expand agent logic in `main.py`.
+- **Testing Included:** Comprehensive test suite for all core functions and agent methods.
+- **Flexible Dependency Management:** Supports both `pip` and `uv` for fast, reproducible installs.
+
+Perfect for developers and researchers who want a lightweight, customizable AI agent with strong security guardrails and clear setup instructions.
 
 # Project Setup Guide
 
-This guide will help you set up the AI Agent Gemini Python project on your computer and get everything running.
+This guide will help you set up the AI Agent project on your computer and get everything running.
 
 ## Prerequisites
 
