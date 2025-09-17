@@ -24,12 +24,29 @@ This guide will help you set up the AI Agent project on your computer and get ev
 - A Gemini API key get one from [Google AI Studio](https://aistudio.google.com/apikey)
 - Recommended: [uv](https://github.com/astral-sh/uv) for fast dependency management
 
-## Step 1: Clone the Repository
+
+## Step 0: Clone the Repository
 
 Clone this project to your local machine:
 ```zsh
 git clone https://github.com/evaezekwem/aiagent.git
 cd aiagent
+```
+
+## Step 1: Create and Activate a Virtual Environment
+
+It is recommended to use a virtual environment to isolate your dependencies.
+
+**Using pip (venv):**
+```zsh
+python -m venv .venv
+source .venv/bin/activate
+```
+
+**Using uv:**
+```zsh
+uv venv
+source .venv/bin/activate
 ```
 
 ## Step 2: Install Dependencies
@@ -70,17 +87,17 @@ This will limit file access to this folder alone.
 
 **Basic usage:**
 ```zsh
-python main.py "your prompt here"
+python main.py "What is the temperature in San Francisco"
 ```
 
 **Verbose mode:**
 ```zsh
-python main.py "your prompt here" --verbose
+python main.py "What is the temperature in San Francisco" --verbose
 ```
 
 **Using uv:**
 ```zsh
-uv run main.py -- "your prompt here" --verbose
+uv run main.py -- "yWhat is the temperature in San Francisco" --verbose
 ```
 
 ## Step 5: Run the Tests
