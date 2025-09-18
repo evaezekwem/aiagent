@@ -1,6 +1,6 @@
 import requests
 from google.genai import types
-get_current_temperature_declaration = types.FunctionDeclaration(
+schema_get_current_temperature = types.FunctionDeclaration(
     name="get_current_temperature",
     description="Gets the current temperature for a given location.",
     parameters=types.Schema(
